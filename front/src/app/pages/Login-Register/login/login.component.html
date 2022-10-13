@@ -1,0 +1,51 @@
+<div class="login-form">
+    <mat-card>
+      <mat-card-content>
+        <h1>Login</h1>
+          <form [formGroup]="loginForm" (ngSubmit)="onLogin()" novalidate class="contacto">
+            <mat-form-field>
+              <mat-label>Correo Electronico</mat-label>
+              <input matInput formControlName="email" maxlength="50" placeholder="Ex. Mich@gmail.com"/>
+              <mat-error *ngIf="isValidField('email')">
+                {{ getErrorMessage('email') }}
+              </mat-error>
+            </mat-form-field>
+            <mat-form-field>
+              <mat-label>Contraseña</mat-label>
+              <input
+                matInput
+                [type]="hidePwd ? 'password' : 'text'"
+                formControlName="password"
+                maxlength="100"
+              />
+            
+              <mat-error *ngIf="isValidField('password')">
+                {{ getErrorMessage('password') }}
+              </mat-error>
+            </mat-form-field>
+            <button
+              color="accent"
+              [disabled]="!loginForm.valid"
+              mat-raised-button
+              type="submit"
+            >
+              <span>ENTRAR</span>
+            </button>
+          </form>
+              <br>
+              <br>
+              <br>
+          <nav>
+            <div style="text-align: center;">
+                <a routerLink="/signup">
+                  Registrarse
+              </a>
+              <br>
+              <br>
+  
+            </div>
+        </nav>
+        </mat-card-content>
+      </mat-card>
+    </div>
+    

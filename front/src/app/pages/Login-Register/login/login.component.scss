@@ -1,0 +1,48 @@
+mat-form-field {
+    width: 100%;
+  }
+  
+  button {
+    float: right;
+    width: 200px;
+  }
+  
+  .login-form {
+    padding: 4rem 1rem;
+    margin-top: 1%;
+    margin-bottom: 0%;
+  
+    mat-card {
+      max-width: 600px;
+      margin: 2rem auto;
+      text-align: center;
+      height: 300px;
+      background-color: rgb(241, 193, 250);
+    }
+  
+    .full-width-input,
+    button {
+      width: 100%;
+      background-color: rgb(229, 23, 153);
+    }
+  
+  
+  }
+  form.contacto{
+    border:none;
+    width: 70%;
+    margin: 0 auto 2rem;
+    border-radius: 50px;
+    /* box-shadow: 0px .2rem 1rem .4rem var(--blanco); */
+}
+.login-form{
+  width: 40%;
+  margin: 4rem  auto 0 auto;
+  height: auto;
+  background-color:var(--gris-categoria);
+  border-radius: .5rem;
+  box-shadow: 0rem .2rem 2rem .5rem var(--gris-img); 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
